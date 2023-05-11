@@ -33,6 +33,7 @@ func main() {
 			tgbotapi.NewKeyboardButtonRow(
 				tgbotapi.NewKeyboardButton("Secret button 1"),
 				tgbotapi.NewKeyboardButton("Secret button 2"),
+				tgbotapi.NewKeyboardButton("Mega secret button"),
 			),
 			tgbotapi.NewKeyboardButtonRow(
 				tgbotapi.NewKeyboardButton("Open sub-menu"),
@@ -46,6 +47,8 @@ func main() {
 			msg.Text = "Meow!"
 		case "Secret button 2":
 			msg.Text = "Meeeeeeooooooow"
+		case "Mega secret button":
+			msg.Text = "Bark!"
 		case "Open sub-menu":
 			msg.Text = "Sub-menu opened"
 			msg.ReplyMarkup = tgbotapi.NewReplyKeyboard(
@@ -67,6 +70,7 @@ func main() {
 				tgbotapi.NewKeyboardButtonRow(
 					tgbotapi.NewKeyboardButton("Secret button 1"),
 					tgbotapi.NewKeyboardButton("Secret button 2"),
+					tgbotapi.NewKeyboardButton("Mega secret button"),
 				),
 				tgbotapi.NewKeyboardButtonRow(
 					tgbotapi.NewKeyboardButton("Open sub-menu"),
